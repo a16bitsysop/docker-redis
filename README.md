@@ -12,7 +12,9 @@ Differs from official docker image which by default forces write every second, t
 Github Repository: [https://github.com/a16bitsysop/docker-redis](https://github.com/a16bitsysop/docker-redis)
 
 ## Environment Variables
-Currently none
+| Name     | Desription                                             | Default |
+|----------|--------------------------------------------------------|---------|
+| TIMEZONE | Timezone to use inside the container, eg Europe/London | unset   |
 
 ## Examples
 **To run a container with docker managed volume mount on /data on network MYNET (without exposing ports)**
