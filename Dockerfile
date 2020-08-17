@@ -6,7 +6,7 @@ RUN apk add --no-cache redis
 COPY redis.conf /etc/redis.conf
 
 WORKDIR /usr/local/bin
-COPY entrypoint.sh .
+COPY travis-helpers/set-timezone.sh entrypoint.sh ./
 WORKDIR /data
 
 ENTRYPOINT [ "entrypoint.sh" ]
