@@ -10,3 +10,5 @@ COPY travis-helpers/set-timezone.sh entrypoint.sh ./
 WORKDIR /data
 
 ENTRYPOINT [ "entrypoint.sh" ]
+
+HEALTHCHECK CMD redis-cli PING
