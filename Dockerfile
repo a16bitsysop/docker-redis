@@ -12,4 +12,4 @@ WORKDIR /data
 
 ENTRYPOINT [ "entrypoint.sh" ]
 
-HEALTHCHECK CMD redis-cli PING || exit 1
+HEALTHCHECK --start-period=60s CMD redis-cli PING || exit 1

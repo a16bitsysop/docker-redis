@@ -1,7 +1,7 @@
 #!/bin/sh
 #display environment variables passed with --env
-echo '$PERCENT=' $PERCENT
-echo '$SIZE=' $SIZE
+echo "\$PERCENT= $PERCENT"
+echo "\$SIZE= $SIZE"
 NME=redis
 set-timezone.sh "$NME"
 
