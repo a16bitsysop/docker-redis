@@ -24,14 +24,15 @@ Github Repository: [https://github.com/a16bitsysop/docker-redis](
 https://github.com/a16bitsysop/docker-redis)
 
 ## Environment Variables
-| Name     | Desription                                                            | Default |
-|----------|-----------------------------------------------------------------------|---------|
-| TIMEZONE | Timezone to use inside the container, eg Europe/London                | unset   |
-| SIZE     | Increase in size that causes a rewrite to disc, needs unit after size | 16mb    |
-| PERCENT  | Percentage increase in size that causes a rewrite to disc             | 50      |
+| Name     | Desription                                              | Default |
+|----------|---------------------------------------------------------|---------|
+| TIMEZONE | Timezone to use inside the container, eg Europe/London  | unset   |
+| SIZE     | Increase in size that causes a rewrite to disc          | 16mb    |
+| PERCENT  | Percentage increase that causes a rewrite to disc       | 50      |
 
 ## Examples
-**To run a container with docker managed volume mount on /data on network MYNET (without exposing ports)**
+**To run a container with docker managed volume mount on /data on network 
+MYNET (without exposing ports)**
 ```
 #docker container run --net MYNET --mount source=redis-data,destination=/data -d \
 --name redis a16bitsysop/redis
