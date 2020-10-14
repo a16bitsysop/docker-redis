@@ -3,7 +3,7 @@ Alpine based Dockerfile for a [redis](https://redis.io) image.
 
 Differs from official docker image which by default forces write every second,
 this version lets os decide.  It uses alpine version of redis with musl
-memory managment, the official docker version is compiled wih jemalloc. 
+memory managment, the official docker version is compiled wih jemalloc.
 It also uses aof and rdb for better error recovery.
 
 [![Docker Pulls](
@@ -31,9 +31,9 @@ https://github.com/a16bitsysop/docker-redis)
 | PERCENT  | Percentage increase that causes a rewrite to disc       | 50      |
 
 ## Examples
-**To run a container with docker managed volume mount on /data on network 
+**To run a container with docker managed volume mount on /data on network
 MYNET (without exposing ports)**
-```
-#docker container run --net MYNET --mount source=redis-data,destination=/data -d \
---name redis a16bitsysop/redis
+```bash
+#docker container run --net MYNET --mount source=redis-data,destination=/data \
+-d --name redis a16bitsysop/redis
 ```
