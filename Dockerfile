@@ -2,9 +2,10 @@ FROM alpine:3.13
 LABEL maintainer="Duncan Bellamy <dunk@denkimushi.com>"
 
 # hadolint ignore=DL3018
-RUN apk add -u --no-cache redis
+RUN apk add -u --no-cache redis stunnel openssl
 
 COPY redis.conf /etc/redis.conf
+COPY stunnel.conf /etc/stunnel/stunnel.conf
 
 WORKDIR /usr/local/bin
 COPY travis-helpers/set-timezone.sh entrypoint.sh ./
