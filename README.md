@@ -11,18 +11,10 @@ so redis will only listen to the loopback interface.  An stunnel client is then
 needed to connect, and the file /etc/stunnel/psk.txt must exist with the pre shared
 key in the format [here](https://www.stunnel.org/auth.html)
 
-[![Docker Pulls](
-https://img.shields.io/docker/pulls/a16bitsysop/redis.svg?style=flat-square)](
-https://hub.docker.com/r/a16bitsysop/redis/)
-[![Docker Stars](
-https://img.shields.io/docker/stars/a16bitsysop/redis.svg?style=flat-square)](
-https://hub.docker.com/r/a16bitsysop/redis/)
-[![Version](
-https://images.microbadger.com/badges/version/a16bitsysop/redis.svg)](
-https://microbadger.com/images/a16bitsysop/redis "Get_your_own_version_badge_on_microbadger.com")
-[![Commit](
-https://images.microbadger.com/badges/commit/a16bitsysop/redis.svg)](
-https://microbadger.com/images/a16bitsysop/redis "Get_your_own_commit_badge_on_microbadger.com")
+[![Docker Pulls](https://img.shields.io/docker/pulls/a16bitsysop/redis.svg?style=plastic)](https://hub.docker.com/r/a16bitsysop/redis/)
+[![Docker Stars](https://img.shields.io/docker/stars/a16bitsysop/redis.svg?style=plastic)](https://hub.docker.com/r/a16bitsysop/redis/)
+[![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/a16bitsysop/redis/latest?style=plastic)](https://hub.docker.com/r/a16bitsysop/redis/)
+[![Github SHA](https://img.shields.io/badge/dynamic/json?style=plastic&color=orange&label=Github%20SHA&query=object.sha&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fa16bitsysop%2Fdocker-redis%2Fgit%2Frefs%2Fheads%2Fmaster)](https://github.com/a16bitsysop/docker-redis)
 
 ## Github
 Github Repository: [https://github.com/a16bitsysop/docker-redis](
