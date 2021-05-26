@@ -21,4 +21,11 @@ then
 	sed -r "s/(protected-mode).*/\1 yes/" -i /etc/redis.conf
 fi
 
+#check aof file is okay and use dump.rdb if not
+if [ -f /data/appendonly.aof ]
+then
+	redis-check-aof /data/appendonly.aof || mv /data/appendonly.aof /data/appendonly.aof.bad
+	[ -f /data/dump.rdb ] && cp /data/dump.rdb /data/appendonly.aof
+fi
+
 redis-server /etc/redis.conf
