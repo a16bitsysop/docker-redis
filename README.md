@@ -1,6 +1,8 @@
 # docker-redis
 Alpine based Dockerfile for a [redis](https://redis.io) image.
 
+This repository has moved to: https://gitlab.com/container-email/redis
+
 Differs from official docker image which by default forces write every second,
 this version lets os decide.  It uses alpine version of redis with musl
 memory managment, the official docker version is compiled wih jemalloc.
